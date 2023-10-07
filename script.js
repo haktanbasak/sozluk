@@ -55,15 +55,6 @@ btn.addEventListener("click", () => {
     })
 });
 
-const url = "https://sozluk.gov.tr/gts?ara=";
-// const audioUrl = "https://sozluk.gov.tr/yazim?ara="
-//const url = "htpps://api.dictionaryapi.dev/api/v2/entries/en" Yabancı sözlük api
-
-const result = document.getElementById("result");
-const sound = document.getElementById("sound");
-const btn = document.getElementById("search-btn");
-var ornek = "";
-
 btn.addEventListener("click", () => {
   let inpWord = document.getElementById("inp-word").value;
   fetch(`${url}${inpWord}`)
